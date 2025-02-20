@@ -1,0 +1,411 @@
+body {
+    margin: 0; /* تعديل حسب ارتفاع النافبار */
+    background-color: black;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("../Font/Gotham\ Medium.ttf") format("truetype"),
+        url("../Font/Gotham\ Medium.ttf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+#project a {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh; /* اجعل القسم الأساسي يأخذ ارتفاع الشاشة على الأقل */
+    display: flex;
+    flex-direction: column;
+}
+
+/*==================================== start animation caption =========================================*/
+
+#animation h3 {
+    font-weight: bold;
+    font-size: 4vh;
+    font-family: "Gotham";
+    font-weight: 100;
+}
+
+#animation .custom-container .custom-text {
+    position: absolute;
+    bottom: 64%; /* يحرك النص إلى المنتصف */
+    left: 3%;
+    color: aliceblue; /* يفضل لون فاتح ليكون واضحًا */
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 22;
+}
+
+/*========================================= start project ==============================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#project {
+    background-image: url("./imgs/project_bg.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    /* overflow-y: hidden; */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#project img {
+    width: 200%;
+    position: relative;
+    right: 100%;
+}
+
+#project .text {
+    color: aliceblue;
+    position: relative;
+    top: 11vh;
+    right: 12vh;
+    z-index: 2;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    main{
+        min-height: 0 !important;
+    }
+    /*start animation section*/
+    #project a{
+        margin-bottom: 30px;
+        width: 90%;
+        margin: auto;
+    }
+    #animation .custom-container .custom-text {
+        position: absolute;
+        top: 9%; /* يحرك النص إلى المنتصف */
+        left: 1%;
+        color: aliceblue; /* يفضل لون فاتح ليكون واضحًا */
+        text-align: left;
+        padding: 10px 20px;
+        border-radius: 5px;
+        z-index: 22;
+    }
+
+    #animation h3 {
+        font-weight: bold;
+        font-size: 1.3vh;
+    }
+    /*end animation section*/
+
+    #project img {
+        width: 210%;
+        position: absolute;
+        right: 1%;
+    }
+    #project {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vh;
+    }
+    #project h2 {
+        font-size: 1.5vh;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 3vh;
+        right: 1vh;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 599px) and (max-width: 900px) {
+    #project {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vh;
+    }
+
+    #project h2 {
+        font-size: 1.5vh;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 5vh;
+        right: 1vh;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    /*start animation section*/
+    #animation .custom-container .custom-text {
+        position: absolute;
+        top: 20%; /* يحرك النص إلى المنتصف */
+        left: 2%;
+        z-index: 22;
+    }
+
+    #animation h3 {
+        font-weight: bold;
+        font-size: 1.5vh;
+    }
+    /*end animation section*/
+
+    #project img {
+        width: 150%;
+        position: absolute;
+        right: 30%;
+    }
+
+    #project h2 {
+        font-size: 1.5vh;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 5vh;
+        right: 0.5vh;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 710px) and (max-width: 750px) {
+    /*start animation section*/
+    #animation .custom-container .custom-text {
+        position: absolute;
+        top: 15%; /* يحرك النص إلى المنتصف */
+        left: 2%;
+        z-index: 22;
+    }
+
+    #animation h3 {
+        font-weight: bold;
+        font-size: 1.5vh;
+    }
+    /*end animation section*/
+
+    #project img {
+        width: 220%;
+        position: absolute;
+        right: 5%;
+    }
+
+    #project h2 {
+        font-size: 1.5vh;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 5vh;
+        right: 7vh;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    #project img {
+        width: 200%;
+        position: absolute;
+        right: 5%;
+    }
+
+    #project h2 {
+        font-size: 1.5vh;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 5vh;
+        right: 5vh;
+        z-index: 2;
+    }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+    #project a {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-decoration: none;
+    }
+
+    main {
+        min-height: 100vh; /* اجعل القسم الأساسي يأخذ ارتفاع الشاشة على الأقل */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /*==================================== start animation caption =========================================*/
+
+    #animation h3 {
+        font-weight: bold;
+        font-size: 4vh;
+        font-family: "Gotham";
+        font-weight: 100;
+    }
+
+    #animation .custom-container .custom-text {
+        position: absolute;
+        bottom: 64%; /* يحرك النص إلى المنتصف */
+        left: 3%;
+        color: aliceblue; /* يفضل لون فاتح ليكون واضحًا */
+        text-align: left;
+        padding: 10px 20px;
+        border-radius: 5px;
+        z-index: 22;
+    }
+
+    /*========================================= start project ==============================================*/
+
+    /* وضع الصورة كخلفية للـ section */
+    #project {
+        background-image: url("./imgs/project_bg.png");
+        background-size: cover; /* تغطية كامل القسم بالصورة */
+        background-position: center; /* مركز الصورة في القسم */
+        /* overflow-y: hidden; */
+        position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+        width: 100%;
+        height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+        color: white; /* لتغيير لون النص إذا كنت بحاجة */
+    }
+
+    #project img {
+        width: 200%;
+        position: relative;
+        right: 100%;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 11vh;
+        right: 12vh;
+        z-index: 2;
+    }
+}
+@media (min-width: 901px) and (max-width: 1300px) {
+    /*start animation section*/
+    #animation .custom-container .custom-text {
+        position: absolute;
+        top: 20%; /* يحرك النص إلى المنتصف */
+        left: 2%;
+        z-index: 22;
+    }
+
+    #animation h3 {
+        font-weight: bold;
+        font-size: 1.5vh;
+    }
+    /*end animation section*/
+
+    #project {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vh;
+    }
+    #project img {
+        width: 200%;
+        position: absolute;
+        right: 5%;
+    }
+
+    #project h2 {
+        font-size: 1.5vh;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 5vh;
+        right: 5vh;
+        z-index: 2;
+    }
+}
+@media (min-width: 1600px) and (max-width: 2000px) {
+    #animation {
+        width: 100%;
+    }
+    #project {
+
+        overflow-x: hidden;
+        height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+        color: white; /* لتغيير لون النص إذا كنت بحاجة */
+
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 2300px) and (max-width: 3000px) {
+
+#project a {
+    display: block;
+    width: 100%;
+
+    height: auto;
+    text-decoration: none;
+}
+
+
+
+
+#animation h3 {
+    font-weight: bold;
+    font-size: 4vh;
+    font-family: "Gotham";
+    font-weight: 100;
+}
+
+#animation .custom-container .custom-text {
+    position: absolute;
+    bottom: 64%; /* يحرك النص إلى المنتصف */
+    left: 3%;
+    color: aliceblue; /* يفضل لون فاتح ليكون واضحًا */
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 22;
+}
+
+/*========================================= start project ==============================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#project {
+    background-image: url("./imgs/project_bg.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    /* overflow-y: hidden; */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#project img {
+    width: 200%;
+    position: relative;
+    /* right: 100%; */
+}
+
+#project .text {
+    color: aliceblue;
+    position: relative;
+    top: 9vh;
+    right: 8vh;
+    z-index: 2;
+    font-size: 30px;
+}
+
+}

@@ -1,0 +1,145 @@
+
+/*================================================ start navbar ======================================================*/
+.navbar {
+    height: 10%; /* الارتفاع الافتراضي */
+    padding: 2vh 0; /* مسافة داخلية أكبر */
+    background-color: transparent; /* الخلفية الافتراضية شفافة */
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+
+  .bg-dark {
+    background-color: black !important;
+    height: 8vh; /* تصغير الارتفاع */
+    padding: 1vh 0; /* تصغير المسافة الداخلية */
+    transition: all 0.3s ease; /* لإضافة تأثير ناعم عند التغيير */
+  }
+
+  .navbar-nav {
+  margin-left: 20vw;
+  }
+
+  .navbar .nav-link {
+    margin-left: 1vw;
+  }
+
+  a.nav-link {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a.nav-link.active {
+    color: #cf0c0c !important;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+
+/* background-color for navigation in phone */
+  .navbar-collapse.show {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    padding: 1vh 0;
+}
+
+  .custom-navbar {
+    margin-left: 9vw; /*  اللينكات بعيدًا عن اللوجو */
+  }
+
+  /* Social Sidebar */
+  .social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  z-index: 1000;
+
+  }
+
+  .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  width: 4vw;
+  height: 4vw;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  }
+
+  .social-link:first-child:hover {
+     background-color: rgb(59, 71, 212);
+     border-radius: 50%;
+
+    }
+    .social-link:nth-child(2):hover {
+      background: linear-gradient(135deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80);
+      border-radius: 50%;
+
+  }
+  .social-link:nth-child(3):hover {
+    background-color: rgb(59, 71, 212);
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+  @media (max-width: 1024px) {
+  .navbar-brand img {
+    width: 10vw;
+    margin-left: 7vw;
+    margin-top: 0;
+  }
+
+  .navbar {
+    height: 8vh; /* الارتفاع الافتراضي */
+    padding: 2vh 0; /* مسافة داخلية أكبر */
+    background-color: transparent; /* الخلفية الافتراضية شفافة */
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .bg-dark {
+    background-color: black !important;
+    height: auto; /* تصغير الارتفاع */
+    padding: 1vh 0; /* تصغير المسافة الداخلية */
+    transition: all 0.3s ease; /* لإضافة تأثير ناعم عند التغيير */
+  }
+  }
+
+  /* تحسين ع التجاوب على الشاشات الصغيره*/
+  @media (max-width: 576px) {
+  .navbar-brand img {
+    width: 10vw;
+    margin-left: 7vw;
+    margin-top: 0;
+  }
+  }
+
+
+
+@media (min-width: 300px) and (max-width: 800px){
+    nav{
+        padding-top: 0px !important;
+    }
+    .navbar-brand img{
+        width: 50px;
+    }
+   .social-sidebar {
+      gap: 3vh;
+    }
+  }
+  /*================================================ end navbar =======================================================*/
+

@@ -1,0 +1,1615 @@
+body {
+    font-family: "Gotham", sans-serif;
+    margin: 0; /* تعديل حسب ارتفاع النافبار */
+    background-color: black;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("../Font/Gotham\ Medium.ttf") format("truetype"),
+        url("../Font/Gotham\ Medium.ttf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*================================================ start electrica ======================================================*/
+
+#electrical {
+    background-image: url("./imgs/serv_sec1.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#electrical img {
+    margin-top: 5%;
+    width: 130%;
+    position: relative;
+    right: 10vh;
+}
+
+#electrical h4 {
+    text-align: left;
+
+    margin-top: 5%;
+    font-size: 2vh;
+    line-height: 2vw;
+    font-size: 1.5vh;
+}
+
+#electrical h3 {
+    text-align: left;
+    margin-top: 8%;
+    font-size: 2vh;
+    font-weight: 100;
+}
+
+#electrical .text {
+    margin-left: 5vh;
+    margin-top: 10%;
+    border: solid 1px;
+    border-radius: 0.5vw;
+    display: inline-block;
+    padding: 3px 6px;
+    position: relative;
+}
+
+#electrical .text2 {
+    margin-left: 5vh;
+    margin-top: 20%;
+    border: solid 1px;
+    border-radius: 0.5vw;
+    display: inline-block;
+    padding: 3px 6px;
+    position: relative;
+    right: 10vh;
+    top: 20vh;
+}
+
+/* ===================================================Responsive ============================================================ */
+
+@media (min-width: 400px) and (max-width: 420px) {
+    #electrical {
+        height: 50vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(50%);
+    }
+    #electrical img {
+        width: 150%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 3vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        /* إزالة أي إزاحة غير ضرورية */
+        top: -50px;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 2vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        /* إزالة أي إزاحة غير ضرورية */
+        top: 50px;
+        right: 0;
+    }
+
+    #electrical .text2 {
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 318px) and (max-width: 360px) {
+    #electrical {
+        height: 50vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(50%);
+    }
+    #electrical img {
+        width: 150%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 2.5vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: static; /* إزالة أي إزاحة غير ضرورية */
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: static; /* إزالة أي إزاحة غير ضرورية */
+    }
+
+    #electrical .text2 {
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 390px) {
+    #electrical {
+        height: 50vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(50%);
+    }
+    #electrical img {
+        width: 150%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 3vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 2.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: absolute;
+        left: 8px;
+        top: -25px;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 373px) and (max-width: 375px) {
+    #electrical {
+        height: 50vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(50%);
+    }
+    #electrical img {
+        width: 150%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 3vh;
+        bottom: 2vh;
+        left: -30px;
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+        padding-left: 50px;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 2.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: absolute;
+        left: 5px;
+        top: -25px;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 410px) and (max-width: 529px) {
+    #electrical {
+        height: 50vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(50%);
+    }
+    #electrical img {
+        width: 150%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 3vh;
+        bottom: 2vh;
+        left: -30px;
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+        padding-left: 50px;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 2.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: absolute;
+        left: 5px;
+        top: -25px;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 4% auto; /* توسيط العناصر مع هامش متناسق */
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 700px) {
+    #electrical img {
+        width: 130%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 2vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        left: 2vh;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    #electrical img {
+        width: 130%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 2vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: static; /* إزالة أي إزاحة غير ضرورية */
+    }
+}
+
+@media (min-width: 599px) and (max-width: 650px) {
+    #electrical img {
+        width: 130%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 280px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 2vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: static; /* إزالة أي إزاحة غير ضرورية */
+        right: 3vh;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    #electrical img {
+        width: 160%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 480px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 6.5vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3vh;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 7vh;
+        left: 2vh;
+    }
+}
+
+@media (min-width: 711px) and (max-width: 750px) {
+    #electrical {
+        height: 50vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(50%);
+    }
+    #electrical img {
+        width: 160%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 480px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 4vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 5vh;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 1vh;
+        left: 2vh;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1024px) {
+    #electrical {
+        height: 70vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(100px);
+    }
+    #electrical img {
+        width: 160%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 480px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 6.5vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3vh;
+        top: -80px;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 50%;
+        right: -50px;
+    }
+}
+
+@media (min-width: 799px) and (max-width: 1024px) {
+    #electrical img {
+        width: 160%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 480px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 5.5vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3vh;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 3vh;
+        left: 2vh;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+    #electrical img {
+        width: 160%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 480px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 5vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3.5vh;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    #electrical img {
+        width: 160%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 480px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 4vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 4vh;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 3vh;
+        left: 3vh;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1060px) {
+    #electrical img {
+        width: 160%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 480px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 6vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 1.5vw; /* الحجم يكون متجاوبًا */
+        line-height: 1.4em;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2vw;
+        font-weight: 50;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 3px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3vh;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 7vh;
+        left: 3.5vh;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    #electrical {
+        height: 110vh;
+        position: relative;
+        overflow: hidden;
+    }
+    #electrical .container {
+        transform: translateY(100px);
+    }
+
+    #electrical img {
+        text-align: center;
+        width: 150%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 600px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 9vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 15px; /* الحجم يكون متجاوبًا */
+        line-height: 2em;
+        font-family: "Gotham_Medium", sans-serif;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 25px;
+        font-weight: 50;
+        font-family: "Gotham_Medium", sans-serif;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 10px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3vw;
+        top: -13vh;
+        border-radius: 0;
+
+        font-weight: 200;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 29vh;
+        left: 10vh;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    #electrical {
+        height: 100vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(100px);
+    }
+
+    #electrical img {
+        text-align: center;
+        width: 400%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 600px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 9vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 15px; /* الحجم يكون متجاوبًا */
+        line-height: 2em;
+        font-family: "Gotham_Medium", sans-serif;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 25px;
+        font-weight: 50;
+        font-family: "Gotham_Medium", sans-serif;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 10px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 1.8vw;
+        top: -10vh;
+        border-radius: 0;
+
+        font-weight: 200;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 29vh;
+        left: 3vh;
+        border-radius: 0;
+    }
+}
+@media (min-width: 1720px) and (max-width: 1800px) {
+    #electrical {
+        height: 100vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(100px);
+    }
+
+    #electrical img {
+        text-align: center;
+        width: 400%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 600px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 9vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 15px; /* الحجم يكون متجاوبًا */
+        line-height: 2em;
+        font-family: "Gotham_Medium", sans-serif;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 25px;
+        font-weight: 50;
+        font-family: "Gotham_Medium", sans-serif;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 10px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3vh;
+        top: -10vh;
+        border-radius: 0;
+
+        font-weight: 200;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 27vh;
+        left: 2.5vh;
+        border-radius: 0;
+    }
+}
+@media (min-width: 1820px) and (max-width: 2000px) {
+    #electrical {
+        height: 100vh;
+        position: relative;
+    }
+    #electrical .container {
+        transform: translateY(100px);
+    }
+
+    #electrical img {
+        text-align: center;
+        width: 400%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 600px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 9vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 15px; /* الحجم يكون متجاوبًا */
+        line-height: 2em;
+        font-family: "Gotham_Medium", sans-serif;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 25px;
+        font-weight: 50;
+        font-family: "Gotham_Medium", sans-serif;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 10px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 2vh;
+        top: -10vh;
+        border-radius: 0;
+
+        font-weight: 200;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 27vh;
+        left: 4vh;
+        border-radius: 0;
+    }
+}
+
+
+@media (min-width: 2500px) and (max-width: 3000px) {
+    #electrical {
+        height: 80vh;
+        position: relative;
+        padding-top: 80px;
+    }
+    #electrical .container {
+        transform: translateY(100px);
+    }
+
+    #electrical img {
+        text-align: center;
+        width: 400%; /* جعل الصورة تأخذ عرض مناسب دون تمدد زائد */
+        max-width: 600px; /* الحد الأقصى للحجم حتى لا تكون ضخمة جدًا */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+        display: inline;
+        right: 9vh;
+        bottom: 2vh;
+        position: relative; /* إزالة أي تحريك غير ضروري */
+    }
+
+    #electrical h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    #electrical h4 {
+        text-align: left;
+        margin-top: 3%;
+        font-size: 15px; /* الحجم يكون متجاوبًا */
+        line-height: 2em;
+        font-family: "Gotham_Medium", sans-serif;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    #electrical h3 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 25px;
+        font-weight: 50;
+        font-family: "Gotham_Medium", sans-serif;
+    }
+
+    #electrical .text {
+        display: inline-block;
+        padding: 1px 10px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        right: 3.1vw;
+        top: -10vh;
+        border-radius: 0;
+
+        font-weight: 200;
+    }
+
+    #electrical .text2 {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 3.5vw;
+        white-space: nowrap; /* منع النص من التمدد */
+        margin: 2% auto; /* توسيط العناصر مع هامش متناسق */
+        position: relative; /* إزالة أي إزاحة غير ضرورية */
+        top: 19vh;
+        left: -0.8vw;
+        border-radius: 0;
+    }
+}
+
+/*================================================ start havc ======================================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#havc {
+    background-image: url("./meterika-image/services/z5.webp");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: 80vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#havc img {
+    margin-top: 5%;
+    border-radius: 1vw; /* حواف دائرية */
+    width: 50%;
+    margin-top: 80px;
+}
+
+#havc h4 {
+    text-align: left;
+    margin-top: 5%;
+    font-size: 1.5vh;
+    line-height: 2vw;
+    font-family: "Gotham_Medium", sans-serif;
+}
+
+#havc h2 {
+    text-align: left;
+    margin-top: 8%;
+    font-size: 3vh;
+    font-weight: bold;
+}
+#havc .hvac2 {
+    padding-top: 40px;
+}
+#havc .text {
+    margin-left: 15vh;
+    margin-top: 7%;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    #havc {
+        height: 50vh;
+    }
+    #havc img {
+        margin-top: 30%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 90%;
+    }
+
+    #havc h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1vh;
+        line-height: 3vw;
+    }
+
+    #havc h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 1.5vh;
+        font-weight: bold;
+    }
+
+    #havc .text {
+        margin-left: 2vh;
+        margin-top: 50%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    #havc img {
+        margin-top: 20%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 90%;
+    }
+
+    #havc .text {
+        margin-left: 2vh;
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    #havc img {
+        margin-top: 30%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 80%;
+    }
+
+    #havc .text {
+        margin-left: 4vh;
+        margin-top: 35%;
+    }
+
+    #havc h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1.5vh;
+        line-height: 3vw;
+    }
+
+    #havc h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    #havc img {
+        margin-top: 20%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 70%;
+    }
+
+    #havc .text {
+        margin-left: 4vh;
+        margin-top: 15%;
+    }
+
+    #havc h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1vh;
+        line-height: 3vw;
+    }
+
+    #havc h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 2000px) {
+    #havc .image {
+        width: 70%;
+    }
+    #havc img {
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    #havc h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1.5vh;
+        line-height: 2vw;
+        font-family: "Gotham_Medium", sans-serif;
+    }
+
+    #havc h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    #havc .hvac2 {
+        padding-top: 40px;
+    }
+    #havc .text {
+        margin-left: 15vh;
+        margin-top: 7%;
+    }
+    #havc .text h4{
+        line-height: 4vh;
+    }
+}
+@media (min-width: 2200px) and (max-width: 3000px) {
+    #havc .image {
+        width: 120%;
+    }
+    #havc img {
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    #havc h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1.5vh;
+        line-height: 2vw;
+        font-family: "Gotham_Medium", sans-serif;
+    }
+
+    #havc h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    #havc .hvac2 {
+        padding-top: 40px;
+    }
+    #havc .text {
+        margin-left: 0px !important;
+        margin-top: 7%;
+    }
+    #havc .image-container {
+        width: 140%;
+    }
+}
+
+/*================================================ start plumbing ======================================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#plumbing {
+    background-image: url("./imgs/serv_sec1.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: 100vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#plumbing img {
+    border: solid 1px;
+    margin-top: 5%;
+    border-radius: 1vw; /* حواف دائرية */
+    width: 50%;
+}
+
+#plumbing h4 {
+    text-align: left;
+    margin-top: 5%;
+    font-size: 2vh;
+    line-height: 2vw;
+}
+
+#plumbing h2 {
+    text-align: left;
+    margin-top: 8%;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#plumbing .text {
+    margin-left: 15vh;
+    margin-top: 7%;
+}
+
+#plumbing .text-right {
+    margin-left: 10vh;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    #plumbing {
+        height: 70vh;
+    }
+    #plumbing img {
+        border: solid 1px;
+        margin-top: 45%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 90%;
+    }
+
+    #plumbing h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1vh;
+        line-height: 3vw;
+        width: 50%;
+    }
+
+    #plumbing h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 1.5vh;
+        font-weight: bold;
+    }
+
+    #plumbing .text {
+        margin-left: 2vh;
+        margin-top: 50%;
+    }
+
+    #plumbing .text-right {
+        margin-left: 3vh;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    #plumbing img {
+        border: solid 1px;
+        margin-top: 20%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 90%;
+    }
+
+    #plumbing .text {
+        margin-left: 2vh;
+        margin-top: 30%;
+    }
+
+    #plumbing .text-right {
+        margin-left: 2vh;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    #plumbing img {
+        border: solid 1px;
+        margin-top: 30%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 80%;
+    }
+
+    #plumbing .text {
+        margin-left: 2vh;
+        margin-top: 35%;
+    }
+
+    #plumbing h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1.5vh;
+        line-height: 3vw;
+        width: 50%;
+    }
+
+    #plumbing h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+    #plumbing img {
+        border: solid 1px;
+        margin-top: 20%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 60%;
+    }
+
+    #plumbing .text {
+        margin-left: 4vh;
+        margin-top: 15%;
+    }
+
+    #plumbing h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1vh;
+        line-height: 3vw;
+        width: 50%;
+    }
+
+    #plumbing h2 {
+        text-align: left;
+        margin-top: 8%;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    #plumbing .text-right {
+        margin-left: 1vh;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1400px){
+    #plumbing {
+        height: 110vh;
+    }
+    #plumbing img {
+        border: solid 1px;
+        margin-top: 20%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 70%;
+    }
+    #plumbing .text {
+        margin-left: 4vh;
+        margin-top: 30%;
+    }
+    #plumbing h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-family: 'Gotham', '-apple-system', 'Roboto', Helvetica, sans-serif;
+        font-weight: 100;
+        line-height: 4vh;
+        font-size: 15px;
+    }
+    #plumbing .text-right {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+    #plumbing {
+        height: 100vh;
+    }
+    #plumbing img {
+        border: solid 1px;
+        margin-top: 20%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 70%;
+    }
+    #plumbing .text {
+        margin-left: 4vh;
+        margin-top: 30%;
+    }
+    #plumbing h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-family: 'Gotham', '-apple-system', 'Roboto', Helvetica, sans-serif;
+        font-weight: 100;
+        line-height: 4vh;
+        font-size: 15px;
+    }
+    #plumbing .text-right {
+        width: 60%;
+    }
+}
+@media (min-width: 2300px) and (max-width: 3000px) {
+    #plumbing {
+        height: 80vh;
+    }
+    #plumbing img {
+        border: solid 1px;
+        margin-top: 20%;
+        border-radius: 2vw; /* حواف دائرية */
+        width: 70%;
+    }
+    #plumbing .text {
+        margin-left: 0vh;
+        margin-top: 30%;
+    }
+    #plumbing h4 {
+        text-align: left;
+        margin-top: 5%;
+        font-family: "Gotham_Medium", sans-serif;
+
+        line-height: 3vh;
+        font-size: 22px;
+    }
+    #plumbing .text-right {
+        width: 80%;
+    }
+}

@@ -1,0 +1,706 @@
+
+body {
+  font-family: "Gotham_Medium", sans-serif;
+    margin: 0; /* تعديل حسب ارتفاع النافبار */
+    background-color:black;
+    overflow-x: hidden;
+}
+/* Regular (400) */
+@font-face {
+  font-family: "Gotham";
+  src: url("../Font/Gotham\ Medium.ttf") format("truetype"),
+    url("../Font/Gotham\ Medium.ttf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+#project a {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+
+}
+
+
+main {
+  min-height: 100vh; /* اجعل القسم الأساسي يأخذ ارتفاع الشاشة على الأقل */
+  display: flex;
+  flex-direction: column;
+}
+
+/*========================================= start project ==============================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#project {
+    background-image: url('./imgs/Aboutbg.png');
+  background-size: cover; /* تغطية كامل القسم بالصورة */
+  background-position: center; /* مركز الصورة في القسم */
+  position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+  width: 100%;
+  height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+  color: white; /* لتغيير لون النص إذا كنت بحاجة */
+
+}
+
+
+
+#project img {
+  width: 200%;
+  position: relative;
+  right: 100%;
+  border-radius: 1vw;
+}
+
+
+#project .text {
+text-align: left;
+color: aliceblue;
+position:relative;
+top: 7vh;
+left: 7vh;
+z-index: 2;
+}
+
+#project .text2 {
+  text-align: left;
+  color: aliceblue;
+  position:relative;
+  top: 7vh;
+  left: 80vh;
+  z-index: 2;
+  }
+
+  #project h2 {
+    font-weight: bold
+  }
+
+#project h4 {
+  font-size: 2vh;
+  line-height: 2vw;
+}
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    main {
+        min-height: 83vh; /* اجعل القسم الأساسي يأخذ ارتفاع الشاشة على الأقل */
+
+      }
+
+  #project  {
+    display: flex;
+    flex-wrap: wrap;
+    height: 0;
+  }
+
+  #project img {
+    width: 220%;
+    position: absolute;
+    right: 1%;
+  }
+
+  #project h2 {
+    font-size: 1vh;
+    font-weight: bold
+  }
+
+  #project .text {
+  color: aliceblue;
+  position:relative;
+  top: 1vh;
+  left: 1vh;
+  z-index: 2;
+
+  }
+
+  #project .text2 {
+    color: aliceblue;
+    position:relative;
+    top: 2vh;
+    left: 22vh;
+    z-index: 22;
+    }
+
+
+  #project h4 {
+    font-size: .5vh;
+
+  }
+
+}
+
+@media (min-width: 335px) and (max-width: 350px) {
+    main {
+        min-height: 83vh; /* اجعل القسم الأساسي يأخذ ارتفاع الشاشة على الأقل */
+
+      }
+
+  #project  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  #project img {
+    width: 220%;
+    position: absolute;
+    right: 1%;
+  }
+
+  #project h2 {
+    font-size: 1vh;
+    font-weight: bold
+  }
+
+  #project .text {
+  color: aliceblue;
+  position:relative;
+  top: 1vh;
+  left: 1vh;
+  z-index: 2;
+  }
+
+  #project .text2 {
+    color: aliceblue;
+    position:relative;
+    top: 2vh;
+    left: 15vh;
+    z-index: 22;
+    }
+
+
+  #project h4 {
+    font-size: .5vh;
+
+  }
+
+}
+
+@media (min-width: 380px) and (max-width: 450px) {
+  #project .text {
+    color: aliceblue;
+    position:relative;
+    top: 2vh;
+    left: 1vh;
+    z-index: 2;
+    }
+
+
+    #project img {
+      width: 220%;
+      position: absolute;
+      right: -3%;
+    }
+
+    #project h4 {
+      font-size: .5vh;
+
+    }
+    #project .row:nth-child(2){
+        margin-bottom: 60px !important;
+    }
+}
+
+@media (min-width: 599px) and (max-width: 900px) {
+
+  #project img {
+    width: 210%;
+    position: absolute;
+    right: .5vh;
+    margin-top: 1vh;
+  }
+
+  #project h2 {
+    font-size: 1.5vh;
+    font-weight: bold
+  }
+
+  #project .text {
+  color: aliceblue;
+  position:relative;
+  top: 2vh;
+  left: 0vh;
+  z-index: 2;
+  }
+
+  #project .text2 {
+    color: aliceblue;
+    position:relative;
+    top: 2vh;
+    left: 23vh;
+    z-index: 22;
+    }
+
+
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+
+  #project img {
+    width: 150%;
+    position: absolute;
+    right: 30%;
+  }
+
+  #project h2 {
+    font-size: 1.5vh;
+    font-weight: bold
+  }
+
+  #project .text {
+  color: aliceblue;
+  position:relative;
+  top: 5vh;
+  right: .5vh;
+  z-index: 2;
+  }
+
+  #project .text2 {
+    color: aliceblue;
+    position:relative;
+    top: 2vh;
+    left: 21vh;
+    z-index: 22;
+    }
+
+}
+
+@media (min-width: 710px) and (max-width: 799px) {
+
+  #project  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+
+  }
+
+    #project img {
+      width: 235%;
+      position: absolute;
+      right: -3vh;
+    }
+
+    #project h2 {
+      font-size: 1.5vh;
+      font-weight: bold
+    }
+
+    #project .text {
+    color: aliceblue;
+    position:relative;
+    top: 2vh;
+    right: 7vh;
+    z-index: 2;
+    }
+
+    #project .text2 {
+      color: aliceblue;
+      position:relative;
+      top: 2vh;
+      left: 21vh;
+      z-index: 22;
+      }
+
+}
+
+@media (min-width: 760px) and (max-width: 770px) {
+
+    #project  {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2vh;
+
+    }
+
+      #project img {
+        width: 220%;
+        position: absolute;
+        right: -2vh;
+      }
+
+      #project h2 {
+        font-size: 1.5vh;
+        font-weight: bold
+      }
+
+      #project .text {
+      color: aliceblue;
+      position:relative;
+      top: 2vh;
+      right: 7vh;
+      z-index: 2;
+      }
+
+      #project .text2 {
+        color: aliceblue;
+        position:relative;
+        top: 2vh;
+        left: 23vh;
+        z-index: 22;
+        }
+        #project h4 {
+          font-size: .9vh;
+
+        }
+}
+@media (min-width: 1300px) and (max-width: 1400px){
+
+    #project{
+        overflow: hidden;
+    }
+
+    #project img {
+        width: 200%;
+        position: relative;
+        right: 100%;
+        border-radius: 1vw;
+
+      }
+
+
+      #project .text {
+      text-align: left;
+      color: aliceblue;
+      position:relative;
+      top: 7vh;
+      left: 7vh;
+      z-index: 2;
+      }
+
+      #project .text2 {
+        text-align: left;
+        color: aliceblue;
+        position:relative;
+        top: 6vh;
+        left: 62vh;
+        z-index: 2;
+        line-height: 1vh;
+        }
+
+        #project h2 {
+          font-weight: bold;
+          font-size: 30px;
+        }
+
+      #project h4 {
+        font-size: 1.5vh;
+        line-height: 3vh;
+      }
+
+}
+
+
+ @media (min-width: 800px) and (max-width: 1024px) {
+    #project .row {
+        margin: 60px 0;
+    }
+
+    #project img {
+        width: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    #project h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #project .text {
+        color: aliceblue;
+        position: relative;
+        top: 2vh;
+        left: 2vh;
+        z-index: 2;
+    }
+
+    #project .text2 {
+        color: aliceblue;
+        position: relative;
+        top: 2vh;
+        left: 21vh;
+        z-index: 22;
+    }
+}
+
+@media  (min-width: 901px) and (max-width: 1024px) {
+
+  #project  {
+     display: flex;
+    flex-wrap: wrap;
+  }
+
+  #project img {
+    width: 230%;
+    position: absolute;
+    right: -5%;
+  }
+
+  #project h2 {
+    font-size: 1.5vh;
+    font-weight: bold
+  }
+
+  #project .text {
+  color: aliceblue;
+  position:relative;
+  top: 3vh;
+  left: -2vh;
+  z-index: 2;
+  }
+
+  #project .text2 {
+    color: aliceblue;
+    position:relative;
+    top: 3vh;
+    left: 70vh;
+    z-index: 22;
+    }
+
+    #project h4 {
+      font-size: .75vh;
+      line-height: 2vw;
+    }
+
+}
+
+@media (min-width: 1020px) and (max-width: 1060px) {
+
+
+  #project img {
+    width: 200%;
+    position: absolute;
+    right: 5%;
+  }
+
+  #project h2 {
+    font-size: 1.5vh;
+    font-weight: bold
+  }
+
+  #project .text {
+  color: aliceblue;
+  position:relative;
+  top: 2vh;
+  left: 2vh;
+  z-index: 22;
+  }
+
+  #project .text2 {
+    color: aliceblue;
+    position:relative;
+    top: 2vh;
+    left: 21vh;
+    z-index: 22;
+    }
+
+    #project h4 {
+      font-size: .75vh;
+      line-height: 2vw;
+    }
+
+}
+@media (min-width: 1710px) and (max-width: 1800px) {
+
+
+
+
+    #project img {
+        width: 200%;
+        position: relative;
+        right: 100%;
+        border-radius: 1vw;
+        overflow: hidden;
+
+      }
+
+
+      #project .text {
+      text-align: left;
+      color: aliceblue;
+      position:relative;
+      top: 7vh;
+      left: 7vh;
+      z-index: 2;
+      }
+
+      #project .text2 {
+        text-align: left;
+        color: aliceblue;
+        position:relative;
+        width: 80%;
+        top: 5vh;
+        left: 62vh;
+        z-index: 2;
+        }
+
+        #project h2 {
+          font-weight: bold
+        }
+
+      #project h4 {
+        font-size: 1vh;
+        line-height: 3vh;
+      }
+
+
+
+}
+
+@media (min-width: 1600px) and (max-width: 1700px){
+
+
+
+
+    #project img {
+      width: 200%;
+      position: relative;
+      right: 100%;
+      border-radius: 1vw;
+
+    }
+
+
+    #project .text {
+    text-align: left;
+    color: aliceblue;
+    position:relative;
+    top: 7vh;
+    left: 7vh;
+    z-index: 2;
+    }
+
+    #project .text2 {
+      text-align: left;
+      color: aliceblue;
+      position:relative;
+      top: 5vh;
+      left: 62vh;
+      z-index: 2;
+      }
+
+      #project h2 {
+        font-weight: bold
+      }
+
+    #project h4 {
+      font-size: 1.5vh;
+      line-height: 3vh;
+    }
+
+}
+
+
+
+@media (min-width: 1500px) and (max-width: 1900px) {
+    #animation {
+        width: 100%;
+    }
+    #project {
+
+        overflow-x: hidden;
+        height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+        color: white; /* لتغيير لون النص إذا كنت بحاجة */
+
+        width: 100%;
+    }
+
+}
+
+
+@media (min-width: 1900px) and (max-width: 2400px) {
+
+    main{
+        overflow: hidden;
+    }
+
+
+
+    #project img {
+      width: 200%;
+      position: relative;
+      right: 100%;
+      border-radius: 1vw;
+    }
+
+
+    #project .text {
+    text-align: left;
+    color: aliceblue;
+    position:relative;
+    top: 7vh;
+    left: 7vh;
+    z-index: 22;
+    }
+
+    #project .text2 {
+      text-align: left;
+      color: aliceblue;
+      position:relative;
+      top: 7vh;
+      left: 78vh;
+      z-index: 22;
+      }
+
+      #project h2 {
+        font-weight: bold
+      }
+
+    #project h4 {
+      font-size: 1.5vh;
+      line-height: 2vw;
+      width: 90%;
+    }
+
+}
+
+@media (min-width: 2500px) and (max-width: 3000px) {
+
+    main{
+
+        text-align: center;
+    }
+
+
+
+    #project img {
+
+
+      width: 260%;
+      position: relative;
+      right: 100%;
+      border-radius: 1vw;
+    }
+
+
+    #project .text {
+    text-align: left;
+    color: aliceblue;
+    position:relative;
+    top: 7vh;
+    left: 7vh;
+    z-index: 22;
+    }
+
+    #project .text2 {
+      text-align: left;
+      color: aliceblue;
+      position:relative;
+      top: 7vh;
+      left: 68vh;
+      z-index: 22;
+      }
+
+      #project h2 {
+        font-weight: bold
+      }
+
+    #project h4 {
+      font-size: 1vh;
+      line-height: 2vh;
+      width: 90%;
+    }
+
+}
+

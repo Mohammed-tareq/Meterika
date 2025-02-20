@@ -1,0 +1,620 @@
+/*================================== start footer =============================================================*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-size: cover; /* تغطي كامل الفوتر */
+    background-position: center; /* الصورة في منتصف الخلفية */
+
+    min-height: 400px; /* تأكد أن الفوتر لديه ارتفاع كافٍ */
+    padding-top: 50px;
+}
+
+footer a {
+    text-decoration: none; /* إزالة التسطير */
+    outline: none; /* إزالة الإطار الأزرق */
+    color: #fff;
+}
+
+#footer a:focus,
+#footer a:active {
+    outline: none; /* إزالة التحديد الأزرق عند التركيز */
+    box-shadow: none; /* التأكد من عدم وجود تأثير */
+}
+
+footer .container {
+    padding: 100px;
+}
+
+footer .row div {
+    margin-bottom: 10px; /* مسافة بين الأعمدة على الشاشات الصغيرة */
+    text-align: left;
+}
+
+/* تعديل موقع اللوجو */
+.logo-title {
+    margin-top: -80px;
+    margin-left: -150px; /* تحريك اللوجو لليسار */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer .Column2 {
+    margin-left: -150px; /* تحريك اللوجو لليسار */
+}
+
+footer .Column3 {
+    margin-left: 50px;
+}
+
+/* تحسين روابط التفاعل */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+footer h6 {
+    padding-left: -25px;
+    line-height: 2;
+    padding: 10px;
+}
+
+footer .social {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    background-color: transparent; /* شفافية الخلفية */
+}
+footer .social:hover {
+    color: red;
+}
+footer .card-title:hover {
+    color: red;
+}
+
+/* =========================================================Mobile====================================================== */
+
+/* تحسين العرض للشاشات الصغيرة */
+@media (min-width: 300px) and (max-width: 500px) {
+    .bg-image {
+        background-size: contain; /* جعل الصورة تظهر بالكامل */
+        min-height: 200px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px;
+        padding-left: 0px;
+        padding-right: 100px;
+        vertical-align:middle;
+    }
+
+    footer .Column2 {
+        margin-left: 50px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 50px;
+    }
+    footer .logo {
+        margin-left: 90px;
+    }
+
+    footer {
+        background-size: contain; /* لضبط الصورة بحيث تظهر بالكامل على الشاشات الصغيرة */
+        padding-right: 15px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    footer .line {
+        margin-left: 30px;
+    }
+    footer .small {
+        margin-left: 40px;
+    }
+}
+/* تحسين العرض للشاشات المتوسطه */
+@media (min-width: 501px) and (max-width: 800px) {
+    footer {
+        background-size: contain; /* لضبط الصورة بحيث تظهر بالكامل على الشاشات الصغيرة */
+        padding-right: 15px;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        background-color: rgba(0, 0, 0, 0.379);
+        top: 0;
+        border-radius: 10px;
+        position: absolute;
+        margin-left: -60px;
+    }
+    .bg-image {
+        background-size: contain; /* جعل الصورة تظهر بالكامل */
+        min-height: 200px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: -50px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 50px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+@media (min-width: 801px) and (max-width: 1023px) {
+    footer {
+        background-size: contain; /* لضبط الصورة بحيث تظهر بالكامل على الشاشات الصغيرة */
+        padding-right: 15px;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        background-color: rgba(0, 0, 0, 0.379);
+        top: 0;
+        border-radius: 10px;
+        position: absolute;
+        margin-left: -60px;
+    }
+    .bg-image {
+        background-size: contain; /* جعل الصورة تظهر بالكامل */
+        min-height: 200px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: -50px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 50px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1320px) and (max-width: 1400px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-size: cover; /* تغطي كامل الفوتر */
+        background-position: center; /* الصورة في منتصف الخلفية */
+        min-height: 400px; /* تأكد أن الفوتر لديه ارتفاع كافٍ */
+        padding-top: 50px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        top: 110px !important;
+        border-radius: 10px;
+        position: absolute;
+        left: -100px;
+    }
+    .bg-image {
+        background-size: cover; /* جعل الصورة تظهر بالكامل */
+        min-height: 300px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: 41px !important; /* تحريك اللوجو لليسار */
+    }
+
+   
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    footer .card-title {
+        display: flex;
+        letter-spacing: 2px;
+        width: 120%;
+    }
+
+
+    footer .line {
+        margin-top: 200px;
+    }
+    footer .small {
+        font-family: " Gothic Medium", sans-serif;
+        font-weight: 600;
+
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    footer {
+        background-size: cover;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        top: 0;
+        border-radius: 10px;
+        position: absolute;
+        margin-left: -60px;
+    }
+    .bg-image {
+        background-size: contain; /* جعل الصورة تظهر بالكامل */
+        min-height: 200px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: -50px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 50px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    footer {
+        background-size: cover;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        top: 60px;
+        border-radius: 10px;
+        position: absolute;
+        margin-left: -180px;
+    }
+    .bg-image {
+        background-size: contain; /* جعل الصورة تظهر بالكامل */
+        min-height: 200px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 60px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: 70px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 30px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    footer .card-title {
+        display: flex;
+        letter-spacing: 2px;
+    }
+    footer .card-title i {
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 1701px) and (max-width: 1800px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-size: cover; /* تغطي كامل الفوتر */
+        background-position: center; /* الصورة في منتصف الخلفية */
+        min-height: 400px; /* تأكد أن الفوتر لديه ارتفاع كافٍ */
+        padding-top: 50px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        top: 110px;
+        border-radius: 10px;
+        position: absolute;
+        left: -160px;
+    }
+    .bg-image {
+        background-size: cover; /* جعل الصورة تظهر بالكامل */
+        min-height: 300px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: 70px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 30px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    footer .card-title {
+        display: flex;
+        letter-spacing: 2px;
+    }
+    footer .card-title i {
+        padding-right: 20px;
+    }
+
+    footer .line {
+        margin-top: 200px;
+    }
+    footer .small {
+        font-family: " Gothic Medium", sans-serif;
+        font-weight: 600;
+
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1900px) and (max-width: 2400px) {
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-size: cover; /* تغطي كامل الفوتر */
+        background-position: center; /* الصورة في منتصف الخلفية */
+        min-height: 400px; /* تأكد أن الفوتر لديه ارتفاع كافٍ */
+        padding-top: 50px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        top: 110px;
+        border-radius: 10px;
+        position: absolute;
+        left: -200px;
+    }
+    .bg-image {
+        background-size: cover; /* جعل الصورة تظهر بالكامل */
+        min-height: 300px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: 70px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 30px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer h5 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    footer .card-title {
+        display: flex;
+        letter-spacing: 2px;
+    }
+    footer .card-title i {
+        padding-right: 20px;
+    }
+
+    footer .line {
+        margin-top: 200px;
+    }
+    footer .small {
+        font-family: " Gothic Medium", sans-serif;
+        font-weight: 600;
+
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 2500px) and (max-width: 3000px) {
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-size: cover; /* تغطي كامل الفوتر */
+        background-position: center; /* الصورة في منتصف الخلفية */
+        min-height: 400px; /* تأكد أن الفوتر لديه ارتفاع كافٍ */
+        padding-top: 50px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+
+    footer .logo {
+        position: relative;
+    }
+    footer .logo img {
+        top:50px;
+        border-radius: 10px;
+        position: absolute;
+        left: -520px;
+        width: 300px;
+    }
+    .bg-image {
+        background-size: cover; /* جعل الصورة تظهر بالكامل */
+        min-height: 300px; /* تصغير ارتفاع الفوتر للشاشات الصغيرة */
+    }
+    footer .container {
+        padding: 100px 0;
+        padding-left: 70px;
+    }
+
+    footer .Column2 {
+        margin-left: 70px; /* تحريك اللوجو لليسار */
+    }
+
+    footer .Column3 {
+        margin-left: 30px;
+    }
+
+    .logo-title {
+        margin-left: -40px; /* تحريك اللوجو لليسار */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer span {
+        text-align: center;
+        color: white;
+    }
+    footer .social{
+        font-size: 40px;
+    }
+    footer h5 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    footer .card-title {
+        display: flex;
+        /* letter-spacing: 2px; */
+        font-size: 1.5rem;
+        width: 150%;
+    }
+    footer .card-title i {
+        padding-right: 20px;
+    }
+
+    footer .line {
+        margin-top: 200px;
+    }
+    footer .small {
+        font-family: " Gothic Medium", sans-serif;
+        font-weight: 600;
+
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,208 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* تعديل حسب ارتفاع النافبار */
+    background-color:black;
+    overflow-x: hidden;
+}
+
+
+/*===================================================================================*/
+
+
+/* وضع الصورة كخلفية للـ section */
+#projects-inside {
+  background-image: url('./imgs/pro.png');
+  background-size: cover; /* تغطية كامل القسم بالصورة */
+  background-position: center; /* مركز الصورة في القسم */
+  position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+  width: 100%;
+  height: 110vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+  color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+
+
+#projects-inside h2 {
+  font-weight: bold;
+  font-size: 3vh;
+}
+
+#projects-inside .text {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#projects-inside h3  {
+  color:rgba(214, 41, 45, 1) !important;
+  font-weight: bold;
+}
+
+
+
+.custom-container .custom-text {
+  position: absolute;
+  top: 12%; /* يحرك النص إلى المنتصف */
+  left: 7%;
+  color:aliceblue; /* يفضل لون فاتح ليكون واضحًا */
+  text-align:left;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 22;
+}
+
+/*======================================= slider ============================================*/
+
+
+/* تنسيق الكونتينر */
+.slider-container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 30vh;
+}
+
+.swiper-wrapper {
+margin-bottom: 10vh;
+}
+
+
+/* تنسيق الـ Swiper */
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+/* المسافة بين الصور */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+  margin: 0 0;
+}
+
+/* تكبير الصورة النشطة */
+.swiper-slide-active {
+  transform: scale(1.2);
+}
+
+/* تنسيق الصور */
+.swiper-slide img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+/* تحسين التأثير عند تحريك الصور */
+.swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* إخفاء الأسهم الافتراضية لـ Swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none !important;
+}
+
+/* تنسيق الأزرار الجديدة */
+.swiper-button-prev,
+.swiper-button-next {
+
+    transition: color 0.3s, transform 0.3s;
+    color: rgba(214, 41, 45, 1); /* لون أحمر */
+    position: absolute;
+    top: 40.7vh; /* وضع الأسهم أسفل الصور */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 222;
+}
+
+/* تنسيق أيقونات الأسهم */
+.swiper-button-prev i,
+.swiper-button-next i {
+    font-size: 18px; /* حجم الأيقونة */
+}
+
+/* تأثير عند تمرير الماوس */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(214, 41, 45, 0.3); /* لون خلفية أقوى عند التحويل */
+    transform: scale(1.1);
+}
+
+/* تحديد موقع الأسهم */
+.swiper-button-prev {
+    left: 39%;
+
+}
+
+.swiper-button-next {
+    right: 39%;
+}
+
+
+
+/* النقاط */
+.swiper-pagination {
+  gap: 8px;
+  justify-content: center;
+  position: absolute;
+
+
+}
+
+.swiper-pagination-bullet {
+  background-color: #aaa; /* لون النقاط العادية */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red; /* لون النقطة النشطة */
+}
+
+
+
+/* شاشة عرض الصورة بالحجم الكامل */
+#fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 2;
+}
+
+/* عند ظهور الصورة بالحجم الكامل */
+#fullscreen-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* تنسيق الصورة المكبرة */
+#fullscreen-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+#fullscreen-overlay.active #fullscreen-img {
+  transform: scale(1);
+}
+

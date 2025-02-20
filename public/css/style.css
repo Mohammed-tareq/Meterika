@@ -1,0 +1,1637 @@
+body {
+    font-family: "Gotham-Bold", sans-serif;
+    margin: 0; /* تعديل حسب ارتفاع النافبار */
+    background-color: black;
+}
+
+/*================================================ FONTS ======================================================*/
+
+/* Regular (400) */
+@font-face {
+    font-family: "Gotham";
+    src: url("../Font/Gotham\ Medium.ttf") format("truetype"),
+        url("../Font/Gotham\ Medium.ttf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*================================================ start video ======================================================*/
+
+.carousel-indicators {
+    margin-bottom: 3vh;
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-item::after :not(:first-child) {
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.494);
+    position: absolute;
+
+    inset: 0;
+}
+
+.carousel-indicators .active {
+    background-color: #cf0c0c !important;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 50%; /* التحكم في المسافة من الأسفل */
+    left: -5vh; /* تحديد المركز الأفقي */
+    transform: translateY(60%); /* لمحاذاة النص في المنتصف */
+    max-width: 40%; /* تحديد عرض الكابشن الأقصى */
+}
+
+.carousel-caption h3 {
+    font-weight: bold;
+    margin-bottom: 4vh;
+    margin-right: 12vh;
+    font-size: 4vh;
+}
+
+span {
+    color: #cf0c0c;
+}
+
+button.view-services {
+    background-color: black; /* خلفية سوداء */
+    color: white; /* نص أبيض */
+    padding: 1.5vh 3vw; /* حجم الزر (المسافة الداخلية) */
+    border: none; /* إزالة الإطار */
+    border-radius: 0.5vw; /* حواف دائرية */
+    font-size: 1.5vh; /* حجم النص */
+    font-weight: bold; /* سمك النص */
+    cursor: pointer; /* تغيير المؤشر عند التمرير */
+    transition: all 0.3s ease; /* تأثير الانتقال للتفاعل */
+}
+
+/* عند التمرير فوق الزر */
+button.view-services:hover {
+    background-color: white; /* لون الخلفية يصبح أبيض */
+    color: black; /* لون النص يصبح أسود */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+button.view-projects {
+    background-color: #cf0c0c; /* خلفية سوداء */
+    color: white; /* نص أبيض */
+    padding: 1.5vh 3vw; /* حجم الزر (المسافة الداخلية) */
+    margin: 1vh;
+    border: none; /* إزالة الإطار */
+    border-radius: 0.5vw; /* حواف دائرية */
+    font-size: 1.5vh; /* حجم النص */
+    font-weight: bold; /* سمك النص */
+    /* تغيير المؤشر عند التمرير */
+    transition: all 0.3s ease; /* تأثير الانتقال للتفاعل */
+}
+
+/* عند التمرير فوق الزر */
+button.view-projects:hover {
+    background-color: white; /* لون الخلفية يصبح أبيض */
+    color: #cf0c0c; /* لون النص يصبح أسود */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+@media (min-width: 300px) and (max-width: 550px) {
+    /* اللي تحته انه يرتفع ي هوباsection منع ال*/
+    /* start*/
+    .carousel-inner {
+        display: flex;
+        position: relative;
+    }
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
+    .carousel-caption button {
+        margin: 0;
+        padding: 5px;
+        font-size: 40px;
+    }
+
+    .carousel-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-item.active {
+        opacity: 1;
+        position: relative;
+    }
+
+    .carousel-item img,
+    .carousel-item video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    /*end*/
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 60%; /* التحكم في المسافة من الأسفل */
+        left: 0.5vh; /* تحديد المركز الأفقي */
+        transform: translateY(70%); /* لمحاذاة النص في المنتصف */
+        max-width: 40%; /* تحديد عرض الكابشن الأقصى */
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1vh;
+    }
+
+    .carousel-caption h3 {
+        font-weight: bold;
+        margin-bottom: 0.5vh;
+        margin-right: 0.5vh;
+        font-size: 1vh;
+    }
+
+    .carousel-caption span {
+        font-size: 1vh;
+    }
+
+    button.view-services,
+    button.view-projects {
+        padding: 0.5vh 1vw; /* حجم الزر (المسافة الداخلية) */
+        font-size: 0.5vh; /* حجم النص */
+
+        left: 0.5vh;
+    }
+}
+
+/* الكود الخاص بالشاشات بين 481 و768 بكسل */
+@media (min-width: 650px) and (max-width: 766px) {
+    /* اللي تحته انه يرتفع ي هوباsection منع ال*/
+    /* start*/
+
+    .carousel-inner {
+        display: flex;
+        position: relative;
+    }
+
+    .carousel-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-item.active {
+        opacity: 1;
+        position: relative;
+    }
+
+    .carousel-item img,
+    .carousel-item video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    /*end*/
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 12vh; /* التحكم في المسافة من الأسفل */
+        left: 0vh; /* تحديد المركز الأفقي */
+        transform: translateY(70%); /* لمحاذاة النص في المنتصف */
+        transform: translateX(-20%);
+        max-width: 60%; /* تحديد عرض الكابشن الأقصى */
+    }
+    .carousel-caption button {
+        width: 25%;
+        font-size: 6px;
+    }
+
+    .carousel-caption h3 {
+        font-weight: bold;
+        margin-bottom: 0.5vh;
+        margin-right: 0.5vh;
+        font-size: 2.2vh;
+    }
+    .carousel-caption span {
+        font-size: 2.2vh;
+    }
+}
+
+@media (min-width: 790px) and (max-width: 1000px) {
+    /* اللي تحته انه يرتفع ي هوباsection منع ال*/
+    /* start*/
+    .carousel-caption {
+        position: absolute;
+        bottom: 18vh; /* التحكم في المسافة من الأسفل */
+        left: 0vh; /* تحديد المركز الأفقي */
+        transform: translateY(90%); /* لمحاذاة النص في المنتصف */
+        transform: translateX(-20%);
+        max-width: 60%; /* تحديد عرض الكابشن الأقصى */
+    }
+
+    .carousel-caption h3 {
+        margin-right: 15px !important;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+    /* اللي تحته انه يرتفع ي هوباsection منع ال*/
+    /* start*/
+    .carousel-caption h3 {
+        margin-right: 15px !important;
+    }
+}
+
+/*================================================ end video ======================================================*/
+
+/*============================================ Start Section about meterika =========================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#about {
+    background-image: url("./imgs/About_home.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: 100vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#about h2 {
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+#about h4 {
+    line-height: 3vw;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: "Gotham-Bold", sans-serif;
+    width: 60%;
+    letter-spacing: 2px;
+}
+
+#about .text {
+    position: absolute;
+    text-align: left;
+    left: 23%;
+    top: 15%;
+}
+
+#about button.more {
+    background-color: black; /* خلفية سوداء */
+    color: white; /* نص أبيض */
+    padding: 1.5vh 3vw; /* حجم الزر (المسافة الداخلية) */
+    border: 2px solid white; /* إزالة الإطار */
+    border-radius: 0.5vw; /* حواف دائرية */
+    font-size: 1.5vh; /* حجم النص */
+    font-weight: bold; /* سمك النص */
+    /* تغيير المؤشر عند التمرير */
+    transition: all 0.3s ease; /* تأثير الانتقال للتفاعل */
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 77vh;
+}
+
+#about button.more:hover {
+    background-color: white; /* لون الخلفية يصبح أبيض */
+    color: black; /* لون النص يصبح أسود */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+    #about h2 {
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    #about h4 {
+        margin-top: 3%;
+        font-size: 0.8vh;
+        width: 90%;
+    }
+
+    #about .text {
+        position: absolute;
+        text-align: left;
+        left: 5%;
+        top: 25%;
+        line-height: 2vw;
+    }
+
+    #about button.more {
+        margin-left: 45%;
+        margin-top: 25vh;
+        padding: 1vh 2vw; /* حجم الزر (المسافة الداخلية) */
+        font-size: 0.75vh; /* حجم النص */
+    }
+
+    #about {
+        background-image: url("./imgs/About_home.png");
+        background-size: cover; /* تغطية كامل القسم بالصورة */
+        background-position: center; /* مركز الصورة في القسم */
+        position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+        width: 100%;
+        height: 30vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+        color: white; /* لتغيير لون النص إذا كنت بحاجة */
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #about {
+        height: 100vh;
+    }
+    #about h2 {
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    #about h4 {
+        margin-top: 2%;
+        font-size: 1vh;
+        width: 90%;
+    }
+
+    #about .text {
+        position: absolute;
+        text-align: left;
+        left: 5%;
+        top: 25%;
+        line-height: 2vw;
+    }
+
+    #about button.more {
+        margin-left: 45%;
+        margin-top: 25vh;
+        padding: 1vh 2vw; /* حجم الزر (المسافة الداخلية) */
+        font-size: 0.75vh; /* حجم النص */
+    }
+
+    #about {
+        background-image: url("./imgs/About_home.png");
+        background-size: cover; /* تغطية كامل القسم بالصورة */
+        background-position: center; /* مركز الصورة في القسم */
+        position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+        width: 100%;
+        height: 30vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+        color: white; /* لتغيير لون النص إذا كنت بحاجة */
+    }
+}
+@media (min-width: 1250px) and (max-width: 1500px) {
+    #about h2 {
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    #about h4 {
+        margin-top: 2%;
+        font-size: 1vh;
+        width: 90%;
+    }
+
+    #about h2 {
+        font-weight: 400;
+        font-size: 3vh;
+    }
+
+    #about h4 {
+        line-height: 3vw;
+        margin-top: 5%;
+        font-size: 18px;
+        font-family: "Gotham-Bold", sans-serif;
+        width: 60%;
+        letter-spacing: 2px;
+    }
+
+    #about .text {
+        position: absolute;
+        text-align: left;
+        left: 23%;
+        top: 15%;
+    }
+}
+
+/*============================================ Start Section commitments =========================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#commitments {
+    background-image: url("./meterika-image/home/z1.webp");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: 70vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#commitments .image-container img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    border-radius: 0.7vw; /* حواف دائرية */
+}
+
+#commitments .counter {
+    position: absolute;
+    font-size: 3vh;
+    color: rgb(243, 234, 234);
+    font-weight: bold;
+    z-index: 1;
+    opacity: 0;
+}
+
+/* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+.counter[data-position="top-left"] {
+    top: 49%;
+    left: 12%;
+}
+
+.counter[data-position="top-right"] {
+    top: 49%;
+    right: 57%;
+}
+
+.counter[data-position="bottom-center"] {
+    top: 49%;
+    right: 69%;
+}
+
+#commitments h4 {
+    text-align: left;
+    margin-top: 5%;
+    font-size: 20px;
+    line-height: 3vw;
+    font-family: "Gotham-Bold", sans-serif;
+    width: 100%;
+}
+
+#commitments h2 {
+    text-align: left;
+    margin-top: 15%;
+    font-size: 3vh;
+    font-weight: 400;
+}
+
+#commitments .text {
+    margin-left: 4vh;
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    #commitments h5 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 1vh;
+        line-height: 4vw;
+    }
+
+    #commitments h4 {
+        text-align: left;
+        width: 90% !important;
+        font-size: 0.8vh;
+        /* font-weight: bold; */
+        line-height: 20px;
+    }
+
+    #commitments .image-container img {
+        width: 40vh;
+        height: 35vh;
+        margin-top: 10%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 35%;
+        left: 18%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 35%;
+        right: 22%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 35%;
+        right: 45%;
+    }
+}
+
+/* الكود الخاص بالشاشات بين 481 و768 بكسل */
+@media (min-width: 401px) and (max-width: 500px) {
+    #commitments h4 {
+        text-align: left;
+        margin-top: 1%;
+        font-size: 2vw;
+        line-height: 6.5vw;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        margin-top: 10%;
+        font-size: 3vh;
+    }
+
+    #commitments .image-container img {
+        width: 40vh;
+        height: 35vh;
+        margin-top: 10%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 1.5vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 35%;
+        left: 21%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 35%;
+        right: 23%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 35%;
+        right: 45.5%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 599px) {
+    #commitments h4 {
+        text-align: left;
+        margin-top: 30px !important;
+        font-size: 1.5vw;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        margin-top: 30px;
+        font-size: 2.5vw;
+    }
+
+    #commitments .image-container img {
+        width: 50vh;
+        height: 35vh;
+        margin-top: 10%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 38%;
+        left: 16%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 38%;
+        right: 28%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 38%;
+        right: 45%;
+    }
+}
+
+/* الأجهزة اللوحية الكبيرة */
+
+@media (min-width: 600px) and (max-width: 700px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 15%;
+        font-size: 1vh;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        margin-bottom: 10%;
+        font-size: 2vh;
+    }
+
+    #commitments .image-container img {
+        width: 40vh;
+        height: 35vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 24%;
+        left: 20%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 24%;
+        right: 30%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 24%;
+        right: 44%;
+    }
+}
+
+/* دي للشاشات الكبير */
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.5vh;
+        line-height: 4vw;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        padding-top: 70px;
+
+        font-size: 2.5vh;
+    }
+
+    #commitments .image-container img {
+        width: 50vh;
+        height: 45vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 40%;
+        left: 12%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 40%;
+        right: 62%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 40%;
+        right: 72%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.5vh;
+        line-height: 4vw;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2.5vh;
+        padding-top: 70px;
+    }
+
+    #commitments .image-container img {
+        width: 50vh;
+        height: 45vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 40%;
+        left: 18%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 40%;
+        right: 62%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 41%;
+        right: 69%;
+    }
+}
+/* دي للشاشات الكبيره جدا */
+
+@media (min-width: 1450px) and (max-width: 1500px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.5vh;
+        line-height: 4vw;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2.5vh;
+        padding-top: 70px;
+    }
+
+    #commitments .image-container img {
+        width: 50vh;
+        height: 45vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 39%;
+        left: 15%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 39%;
+        right: 62%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 39%;
+        right: 70%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.5vh;
+        line-height: 3vw;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2.5vh;
+        padding-top: 72px;
+    }
+
+    #commitments .image-container img {
+        width: 50vh;
+        height: 45vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 38%;
+        left: 18%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 38%;
+        right: 58%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 38%;
+        right: 68%;
+    }
+}
+
+@media (min-width: 1705px) and (max-width: 1800px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.5vh;
+        line-height: 3vw;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        margin-top: 5%;
+        font-size: 2.5vh;
+        padding-top: 72px;
+    }
+
+    #commitments .image-container img {
+        width: 50vh;
+        height: 45vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 37%;
+        left: 18%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 37%;
+        right: 58%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 37%;
+        right: 67%;
+    }
+}
+
+@media (min-width: 1900px) and (max-width: 2000px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.5vh;
+        line-height: 60px;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        padding-top: 70px;
+        margin-top: 5%;
+        font-size: 2.5vh;
+    }
+
+    #commitments .image-container img {
+        width: 50vh;
+        height: 45vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 39%;
+        left: 23%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 39%;
+        right: 58%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 39%;
+        right: 66%;
+    }
+}
+
+@media (min-width: 2500px) and (max-width: 3000px) {
+    #commitments h4 {
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.5vh;
+        line-height: 60px;
+    }
+
+    #commitments h2 {
+        text-align: left;
+        padding-top: 70px;
+        margin-top: 5%;
+        font-size: 2.5vh;
+    }
+
+    #commitments .image-container img {
+        width: 40vh;
+        height: 35vh;
+        margin-top: 5%;
+        border-radius: 1vw; /* حواف دائرية */
+    }
+
+    #commitments .counter {
+        position: absolute;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    /* يمكن تحديد مكان الأرقام إذا كنت تريد تغيير المواقع */
+    .counter[data-position="top-left"] {
+        top: 28%;
+        left: 25%;
+    }
+
+    .counter[data-position="top-right"] {
+        top: 28%;
+        right: 54%;
+    }
+
+    .counter[data-position="bottom-center"] {
+        top: 28%;
+        right: 61%;
+    }
+}
+
+/*=============================================== start used animation in section project and ===========================================*/
+
+/* وضع الصورة كخلفية للـ section */
+#projects {
+    background-image: url("./imgs/project_home.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    background-repeat: no-repeat; /* لا تكرار الصورة */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+    padding-top: 30px;
+}
+
+#projects h2,
+#projects h4,
+#projects p,
+#projects span {
+    color: #fff;
+    font-family: "Gotham-Bold", sans-serif;
+}
+
+#projects h2 {
+    margin-left: 10vh;
+    margin-top: 15vh;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#projects button.more {
+    background-color: black; /* خلفية سوداء */
+    color: white; /* نص أبيض */
+    padding: 1.5vh 3vw; /* حجم الزر (المسافة الداخلية) */
+    border: 2px solid white; /* إزالة الإطار */
+    border-radius: 0.5vw; /* حواف دائرية */
+    font-size: 1.5vh; /* حجم النص */
+    font-weight: bold; /* سمك النص */
+
+    transition: all 0.3s ease; /* تأثير الانتقال للتفاعل */
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom: 4vh;
+}
+
+/* عند التمرير فوق الزر */
+#projects button.more:hover {
+    background-color: white; /* لون الخلفية يصبح أبيض */
+    color: black; /* لون النص يصبح أسود */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+/*  Image scale animation
+   ========================================================================== */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.six-columns {
+    flex: 0 0 calc(50% - 30%);
+    margin: 7vh;
+}
+
+.anim-img-scale {
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: transform 1.8s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.anim-img-scale__inner {
+    transform: scale(1.5);
+    transition: transform 1.5s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.js-img-scale.js-img-scale-active.anim-img-scale,
+.js-img-scale.js-img-scale-active .anim-img-scale__inner {
+    transform: scale(1);
+}
+
+.js-img-scale-active.anim-img-scale,
+.after-preloader-anim.anim-img-scale {
+    transition: transform 1.8s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.swiper-slide .anim-img-scale {
+    transform: scale(0.8);
+}
+
+.js-slider-scroll-anim-active .swiper-slide .anim-img-scale {
+    transition: transform 2.2s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+    transition-delay: 0.5s;
+}
+
+.js-img-scale-active .anim-img-scale__inner,
+.after-preloader-anim .anim-img-scale__inner {
+    transition: transform 1.2s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.swiper-slide .anim-img-scale__inner {
+    transform: scale(1.5);
+}
+
+.js-slider-scroll-anim-active .swiper-slide .anim-img-scale__inner {
+    transition: transform 1.9s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+    transition-delay: 0.5s;
+}
+
+body .hover-box:hover .anim-img-scale_hover {
+    transform: scale(0.9);
+    transition: transform 1.8s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.hover-box:hover .anim-img-scale_hover .anim-img-scale__inner {
+    transform: scale(1.15);
+    transition: transform 1.2s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+/* Image reveal animation
+   ========================================================================== */
+
+.anim-img-reveal {
+    overflow: hidden;
+    position: relative;
+}
+
+.anim-img-reveal:before,
+.anim-img-reveal:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background-color: #000;
+    transition: transform 1s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.anim-img-reveal:before {
+    left: -1%;
+    top: -1%;
+    right: -1%;
+    bottom: 66%;
+}
+
+.anim-img-reveal:after {
+    left: -1%;
+    right: -1%;
+    bottom: -1%;
+    top: 66%;
+    transition-delay: 0.2s;
+}
+
+.anim-img-reveal__hidden:before {
+    left: -1%;
+    top: 33%;
+    right: 49%;
+    bottom: 33%;
+    transition-delay: 0.1s;
+}
+
+.anim-img-reveal__hidden:after {
+    left: 49%;
+    top: 33%;
+    right: -1%;
+    bottom: 33%;
+    transition-delay: 0.1s;
+}
+
+.js-scrollanim.js-scrollanim-active.anim-img-reveal:before,
+.js-page-in-anim-active .after-preloader-anim.anim-img-reveal:before {
+    transform: translateX(105%);
+}
+
+.js-scrollanim.js-scrollanim-active.anim-img-reveal:after,
+.js-page-in-anim-active .after-preloader-anim.anim-img-reveal:after {
+    transform: translateX(-105%);
+}
+
+.anim-img-reveal__hidden {
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+/* Text reveal animation
+  =======================================================================================*/
+.anim-text-reveal {
+    overflow: hidden;
+    position: relative;
+    top: 2vh;
+}
+
+.anim-text-reveal:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: #000;
+    transform: translateY(0);
+    transition: 3s cubic-bezier(0.225, 1, 0.316, 0.99);
+}
+
+.js-scrollanim-active .anim-text-reveal:before {
+    transform: translateY(110%);
+}
+
+/*  Slide animation
+   ============================================================= */
+.anim-slide {
+    display: inline-block;
+    transform: translateY(105%);
+    transition: 1.6s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+    overflow: hidden;
+    position: relative;
+    top: 2vh;
+}
+
+.js-scrollanim-active .anim-slide {
+    transform: translateY(0);
+}
+
+/* Text fill animation
+   ================================================================== */
+.anim-text-fill {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    color: transparent !important;
+}
+
+.anim-text-fill:before {
+    content: attr(data-text);
+    overflow: hidden;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    white-space: nowrap;
+    color: #fff;
+    transform: translateY(-50%);
+    transition: 1s cubic-bezier(0.767, 0.01, 0.18, 1.01);
+}
+
+.js-scrollanim-active .anim-text-fill:before {
+    width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 892px) {
+    #projects img {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    #projects h2 {
+        margin-left: 7vh;
+        margin-top: 3vh;
+        text-align: left;
+        font-size: 2vh;
+    }
+
+    #projects h4,
+    span {
+        font-size: 2vh;
+    }
+}
+
+/* الكود الخاص بالشاشات بين 481 و768 بكسل */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* الأجهزة اللوحية الكبيرة */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*============================================ start Section our services ========================================*/
+
+/* قسم الخدمات */
+#ourservices {
+    background-image: url("./imgs/service_home.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: auto; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white;
+    padding: 60px 0;
+    font-family: "Gotham-Bold", sans-serif;
+}
+
+/* العنوان الرئيسي والنص */
+#ourservices h2 {
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#ourservices h4 {
+    text-align: left;
+
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+#ourservices h5 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Gotham-Bold", sans-serif;
+    font-weight: 400;
+}
+
+#ourservices .min-img {
+    margin-top: 2%;
+    margin-left: 15%;
+    width: 70%;
+}
+
+/* container*/
+#ourservices .servicescontent {
+    padding: 20px;
+    width: 100%;
+}
+
+/* image */
+.type-of-food {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 2s ease;
+}
+
+.type-of-food:hover {
+    transform: scale(1.05); /* تكبير عند التمرير */
+}
+
+/* layer*/
+.food-layer {
+    background-color: rgba(0, 0, 0, 0.6); /* لون خلفية الطبقة */
+    color: #eceff1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 2s ease, opacity 0.6s ease; /* تأثير سلس للظهور */
+    opacity: 0; /* مخفي في البداية */
+    transform: translateY(200px); /* يتحرك للأسفل */
+    border-radius: 10px;
+    font-family: "Gotham-Bold", sans-serif;
+}
+
+/* تأثير الظهور عند التمرير */
+.type-of-food.visible .food-layer {
+    opacity: 1; /* يظهر */
+    transform: translateY(0); /* يعود إلى موضعه الطبيعي */
+}
+
+#ourservices button.more {
+    background-color: black; /* خلفية سوداء */
+    color: white; /* نص أبيض */
+    padding: 1.5vh 3vw; /* حجم الزر (المسافة الداخلية) */
+    border: 2px solid white; /* إزالة الإطار */
+    border-radius: 0.5vw; /* حواف دائرية */
+    font-size: 1.5vh; /* حجم النص */
+    font-weight: bold; /* سمك النص */
+    cursor: pointer;
+    transition: all 0.3s ease; /* تأثير الانتقال للتفاعل */
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 10vh;
+}
+
+#ourservices button.more:hover {
+    background-color: white; /* لون الخلفية يصبح أبيض */
+    color: black; /* لون النص يصبح أسود */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+#ourservices a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+/* تحسين التجاوب */
+@media (min-width: 300px) and (max-width: 915px) {
+    #ourservices h2 {
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    #ourservices h4 {
+        margin-top: 3%;
+        font-size: 2vh;
+    }
+
+    #ourservices h5 {
+        margin-top: 3%;
+        font-size: 2vh;
+    }
+
+    #ourservices .min-img {
+        width: 100%;
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+
+    #ourservices img {
+        width: 68%;
+    }
+
+    .type-of-food {
+        margin-bottom: 20px;
+    }
+}
+
+/*=============================================== start Section gallery ===========================================*/
+
+#gallery {
+    background-image: url("./imgs/gallary_home.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: 70vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#gallery h2 {
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+#gallery img {
+    width: 40vh;
+    height: 40vh;
+    padding-bottom: 70px;
+}
+
+#container {
+    overflow: hidden;
+}
+
+.photobanner {
+    display: flex;
+    gap: 20px;
+    width: 3550px;
+    animation: bannermove 30s linear infinite;
+}
+
+.photobanner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-2125px);
+    }
+}
+
+#gallery button.more {
+    background-color: black; /* خلفية سوداء */
+    color: white; /* نص أبيض */
+    padding: 1.5vh 3vw; /* حجم الزر (المسافة الداخلية) */
+    border: 2px solid white; /* إزالة الإطار */
+    border-radius: 0.5vw; /* حواف دائرية */
+    font-size: 1.5vh; /* حجم النص */
+    font-weight: bold; /* سمك النص */
+    /* تغيير المؤشر عند التمرير */
+    transition: all 0.3s ease; /* تأثير الانتقال للتفاعل */
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom: 58vh;
+}
+
+#gallery button.more:hover {
+    background-color: white; /* لون الخلفية يصبح أبيض */
+    color: black; /* لون النص يصبح أسود */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+/* تحسين التجاوب */
+@media (min-width: 300px) and (max-width: 915px) {
+    #gallery h2 {
+        font-weight: bold;
+        font-size: 2vh;
+    }
+}
+
+/*=============================================== start Section parteners ===========================================*/
+
+#parteners h2 {
+    font-family: "Gotham";
+    color: #eceff1;
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 3vh;
+}
+
+/* تحسين التجاوب */
+@media (min-width: 300px) and (max-width: 915px) {
+    #parteners h2 {
+        font-weight: bold;
+        font-size: 2vh;
+    }
+}
+
+/*=============================================== start Section photo-foter ==========================================*/
+#photo-foter {
+    background-image: url("./imgs/contact.png");
+    background-size: cover; /* تغطية كامل القسم بالصورة */
+    background-position: center; /* مركز الصورة في القسم */
+    position: relative; /* لتحديد موقع الصورة فوق الخلفية */
+    width: 100%;
+    height: 70vh; /* يمكنك تعديل الارتفاع حسب احتياجك */
+    color: white; /* لتغيير لون النص إذا كنت بحاجة */
+}
+
+#photo-foter a {
+    text-decoration: none; /* إزالة التسطير */
+    outline: none; /* إزالة الإطار الأزرق */
+    color: #fff;
+}
+
+#photo-foter a:focus,
+#photo-foter a:active {
+    outline: none; /* إزالة التحديد الأزرق عند التركيز */
+    box-shadow: none; /* التأكد من عدم وجود تأثير */
+}
+
+#photo-foter h2 {
+    text-align: left;
+    margin-left: 15vh;
+    position: relative;
+    top: 20vh;
+}
+
+#photo-foter h3 {
+    text-align: left;
+    margin-top: 8%;
+    font-size: 2vh;
+    font-weight: 50;
+    top: 10vh;
+}
+
+#photo-foter span {
+    color: #fff;
+    font-size: 2vh;
+}
+#photo-foter span:hover {
+    color: #cf0c0c;
+    cursor: pointer;
+}
+
+#photo-foter .span2 {
+    margin-left: 120px;
+    padding-top: 5px;
+}
+
+#photo-foter .text {
+    margin-left: 5vh;
+    margin-top: 40%;
+    display: inline-block;
+    padding: 3px 6px;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    #photo-foter {
+        background-image: url("./imgs/contact.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0px;
+        text-align: center;
+        overflow-x: hidden; /* منع السكرول الجانبي */
+    }
+
+    #photo-foter .row {
+        display: flex;
+        flex-direction: column; /* يجعل كل col يأخذ سطرًا منفصلًا */
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    #photo-foter .col {
+        width: 100%; /* يجعل كل col يأخذ العرض الكامل */
+        display: block;
+        margin-bottom: 10px; /* لإضافة مسافة بين كل عنصر */
+    }
+
+    #photo-foter .col .spans-container {
+        display: flex;
+        flex-wrap: wrap; /* يضمن عدم خروج النص عن الحدود */
+        gap: 10px; /* مسافة بين الـ spans */
+        align-items: center;
+    }
+
+    #photo-foter h2 {
+        font-size: 3vh;
+        top: -15vh;
+        width: 100%;
+        text-align: center;
+        margin-left: 2vh;
+    }
+
+    #photo-foter h3 {
+        font-size: 2vh;
+        font-weight: 400;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    #photo-foter span {
+        color: #fff;
+        font-size: 1.5vh;
+        /* display: inline-block; */
+    }
+
+    #photo-foter .text {
+        margin-top: 5%;
+        padding: 5px 10px;
+        max-width: 100%;
+    }
+}
