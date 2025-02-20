@@ -41,7 +41,7 @@ class AboutController extends Controller
         if ($request->hasFile('video')) {
             $video = $request->file('video');
             $videoname = uniqid() . "." . $video->getClientOriginalExtension();
-            $video->move(public_path('videos/'), $videoname);
+            $video->move('videos/', $videoname);
             $input['video'] = asset('videos/' . $videoname);
         }
 
